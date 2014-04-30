@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Devtist.Image</id>
+    <description>Image processing function. EXIF reader</description>
+    <authors></authors>
+    <owners></owners>
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <version></version>
+    <requireLicenseAcceptance></requireLicenseAcceptance>
+    <copyright></copyright>
+	<dependencies>
+      <dependency id="Devtist.Io" version="[0.1.0.0,)" />
+    </dependencies>
+    <tags>devtist image exif raw cr2 jpg jpeg</tags>
+  </metadata>
+  <files>
+    <file src="build\binaries\Devtist.Image.dll" target="lib\net45" />
+    <file src="build\binaries\Devtist.Image.pdb" target="lib\net45" />
+    <file src="src\Devtist.Image\**\*.cs" target="src" />
+  </files>
+</package>

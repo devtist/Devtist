@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Devtist.Io</id>
+    <description>IO wrapper around different providers</description>
+    <authors></authors>
+    <owners></owners>
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <version></version>
+    <requireLicenseAcceptance></requireLicenseAcceptance>
+    <copyright></copyright>
+    <tags>devtist io stream file filestream</tags>
+  </metadata>
+  <files>
+    <file src="build\binaries\Devtist.Io.dll" target="lib\net45" />
+    <file src="build\binaries\Devtist.Io.pdb" target="lib\net45" />
+    <file src="src\Devtist.Io\**\*.cs" target="src" />
+  </files>
+</package>

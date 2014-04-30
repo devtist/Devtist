@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82C183E2-E931-43A6-AA44-B6EF5DCEECF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Devtist.Image</RootNamespace>
+    <AssemblyName>Devtist.Image</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\ImageExtensionUndefined.cs" />
+    <Compile Include="Exceptions\ImageFormatInvalid.cs" />
+    <Compile Include="Exif\ExifMetadata.cs" />
+    <Compile Include="Exif\IExifMetadata.cs" />
+    <Compile Include="Exif\IExifInfoParser.cs" />
+    <Compile Include="Exif\ImageFileDirectory.cs" />
+    <Compile Include="Exif\Parsers\CanonRaw\CanonRawParser.cs" />
+    <Compile Include="Exif\Parsers\Jpeg\JpegParser.cs" />
+    <Compile Include="Exif\TagInfo.cs" />
+    <Compile Include="Exif\TagType.cs" />
+    <Compile Include="Exif\Tag\ExifTagExifOffset.cs" />
+    <Compile Include="Exif\Tag\ExifTagCopyright.cs" />
+    <Compile Include="Exif\Tag\ExifTagProcessingSoftware.cs" />
+    <Compile Include="Exif\Tag\ExifTagJpgFromRawStart.cs" />
+    <Compile Include="Exif\Tag\ExifTagPreviewImageStart.cs" />
+    <Compile Include="Exif\Tag\ExifTagStripOffsets.cs" />
+    <Compile Include="Exif\Tag\ExifTagPageName.cs" />
+    <Compile Include="Exif\Tag\ExifTagPlanarConfiguration.cs" />
+    <Compile Include="Exif\Tag\ExifTagPlanarConfigurationType.cs" />
+    <Compile Include="Exif\Tag\ExifTagYCbCrPositioningType.cs" />
+    <Compile Include="Exif\Tag\ExifTagYCbCrPositioning.cs" />
+    <Compile Include="Exif\Tag\ExifTagModifyDate.cs" />
+    <Compile Include="Exif\Tag\TagExDateTime.cs" />
+    <Compile Include="Exif\Tag\ExifTagArtist.cs" />
+    <Compile Include="Exif\Tag\TagUndefined.cs" />
+    <Compile Include="Exif\Tag\ExifTagMaxSampleValue.cs" />
+    <Compile Include="Exif\Tag\ExifTagMinSampleValue.cs" />
+    <Compile Include="Exif\Tag\ExifTagRowsPerStrip.cs" />
+    <Compile Include="Exif\Tag\ExifTagPhotometricInterpretation.cs" />
+    <Compile Include="Exif\Tag\ExifTagPhotometricInterpretationType.cs" />
+    <Compile Include="Exif\Tag\ExifTagOldSubfileType.cs" />
+    <Compile Include="Exif\Tag\ExifTagOldSubfileTypeType.cs" />
+    <Compile Include="Exif\Tag\ExifTagThresholding.cs" />
+    <Compile Include="Exif\Tag\ExifTagThresholdingType.cs" />
+    <Compile Include="Exif\Tag\ExifTagImageDescription.cs" />
+    <Compile Include="Exif\Tag\ExifTagDocumentName.cs" />
+    <Compile Include="Exif\Tag\ExifTagFillOrder.cs" />
+    <Compile Include="Exif\Tag\ExifTagFillOrderType.cs" />
+    <Compile Include="Exif\Tag\ExifTagCellLength.cs" />
+    <Compile Include="Exif\Tag\ExifTagCellWidth.cs" />
+    <Compile Include="Exif\Tag\ExifTagResolutionUnitType.cs" />
+    <Compile Include="Exif\Tag\ExifTagResolutionUnit.cs" />
+    <Compile Include="Exif\Tag\ExifTagStripByteCounts.cs" />
+    <Compile Include="Exif\Tag\TagExEnum.cs" />
+    <Compile Include="Exif\Tag\TagExRational.cs" />
+    <Compile Include="Exif\Tag\ExifTagYResolution.cs" />
+    <Compile Include="Exif\Tag\ExifTagXResolution.cs" />
+    <Compile Include="Exif\Tag\TagExURational.cs" />
+    <Compile Include="Exif\Tag\ExifTagSamplesPerPixel.cs" />
+    <Compile Include="Exif\Tag\ExifTagOrientationType.cs" />
+    <Compile Include="Exif\Tag\ExifTagOrientation.cs" />
+    <Compile Include="Exif\Tag\ExifTagModel.cs" />
+    <Compile Include="Exif\Tag\ExifTagMake.cs" />
+    <Compile Include="Exif\Tag\TagExString.cs" />
+    <Compile Include="Exif\Tag\ExifTagBitsPerSample.cs" />
+    <Compile Include="Exif\Tag\ExifTagCompression.cs" />
+    <Compile Include="Exif\Tag\ExifTagCompressionType.cs" />
+    <Compile Include="Exif\Tag\Tag.cs" />
+    <Compile Include="Exif\Tag\ExifTagImageHeight.cs" />
+    <Compile Include="Exif\Tag\TagExUInt.cs" />
+    <Compile Include="Exif\Tag\ExifTagImageWidth.cs" />
+    <Compile Include="Exif\Tag\TagAttribute.cs" />
+    <Compile Include="Exif\Tag\TagEx.cs" />
+    <Compile Include="Exif\Tag\Utils.cs" />
+    <Compile Include="ImageProcessor.cs" />
+    <Compile Include="ImageType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Devtist.Io\Devtist.Io.csproj">
+      <Project>{427FD3F8-2530-40A2-BD79-19360D99DBF7}</Project>
+      <Name>Devtist.Io</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

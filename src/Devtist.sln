@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devtist.Io", "Devtist.Io\Devtist.Io.csproj", "{427FD3F8-2530-40A2-BD79-19360D99DBF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devtist.Image", "Devtist.Image\Devtist.Image.csproj", "{82C183E2-E931-43A6-AA44-B6EF5DCEECF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devtist.Image.Test", "Devtist.Image.Test\Devtist.Image.Test.csproj", "{99CAFE54-3A8E-45C5-B00B-F327E64D62CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{CC1175A4-A90E-4727-ADAC-B38D4F8F20FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{30EE3AE0-E7B6-442E-B4C2-41A7E5A896B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427FD3F8-2530-40A2-BD79-19360D99DBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427FD3F8-2530-40A2-BD79-19360D99DBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427FD3F8-2530-40A2-BD79-19360D99DBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427FD3F8-2530-40A2-BD79-19360D99DBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C183E2-E931-43A6-AA44-B6EF5DCEECF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C183E2-E931-43A6-AA44-B6EF5DCEECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C183E2-E931-43A6-AA44-B6EF5DCEECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C183E2-E931-43A6-AA44-B6EF5DCEECF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CAFE54-3A8E-45C5-B00B-F327E64D62CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CAFE54-3A8E-45C5-B00B-F327E64D62CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CAFE54-3A8E-45C5-B00B-F327E64D62CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CAFE54-3A8E-45C5-B00B-F327E64D62CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82C183E2-E931-43A6-AA44-B6EF5DCEECF5} = {CC1175A4-A90E-4727-ADAC-B38D4F8F20FD}
+		{427FD3F8-2530-40A2-BD79-19360D99DBF7} = {CC1175A4-A90E-4727-ADAC-B38D4F8F20FD}
+		{99CAFE54-3A8E-45C5-B00B-F327E64D62CD} = {30EE3AE0-E7B6-442E-B4C2-41A7E5A896B0}
+	EndGlobalSection
+EndGlobal
